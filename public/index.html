@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Student Support Chatbot</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <div class="avatar">AI</div>
+      <div>
+        <h1>Student Support</h1>
+        <p>AI Student Support Chatbot</p>
+      </div>
+      <span class="status">Online</span>
+    </header>
+
+    <main class="chat">
+      <div id="messages" class="messages">
+        <div class="message bot">
+          <div class="bubble">
+            สวัสดี! 👋 ฉันคือ AI Student Support
+            <br><br>
+            วันนี้เป็นอย่างไรบ้าง? มีเรื่องเรียนหรือเรื่องอื่นที่อยากพูดคุยไหม
+          </div>
+        </div>
+      </div>
+
+      <div id="notice" class="notice" role="status">
+        ตอนนี้เป็นโหมดทดสอบ ยังไม่ได้เชื่อม AI
+      </div>
+
+      <form id="chat-form" class="chat-form">
+        <input
+          id="message-input"
+          type="text"
+          placeholder="พิมพ์ข้อความของคุณ..."
+          autocomplete="off"
+          required
+        >
+        <button type="submit">ส่ง</button>
+      </form>
+      <p class="disclaimer">พื้นที่พูดคุยเพื่อสนับสนุนนักศึกษา ไม่ใช่บริการฉุกเฉิน</p>
+    </main>
+  </div>
+</body>
+</html>
